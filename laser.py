@@ -24,7 +24,7 @@ def get_state():
     print(f"state: {response.json()}")
     return response.json()
 
-def aim_laser():
+def aim_laser(magnon=False):
     angle = 0
     restart_laser = 3
 
@@ -44,7 +44,10 @@ def aim_laser():
             state = get_state()
 
             if cargo_hold.must_move_item():
-                cargo_hold.move_all_down(.5)
+                if magnon:
+                    cargo_hold.move_magnon()
+                else:
+                    cargo_hold.move_all_down(.5)
 
             if state.get("is_mining"):
                 print("mining rn")
