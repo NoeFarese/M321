@@ -1,4 +1,5 @@
 apiVersion: apps/v1
+# A Deployment manages a set of Pods to run an application workload
 kind: Deployment
 metadata:
   name: keycloak
