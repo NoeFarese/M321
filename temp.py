@@ -52,3 +52,9 @@ energy.set_limits({
 
 # nuku - nuclear waste verkaufen
 # nav.travel_position_until_recive(-96486, -80625)
+
+# Station 61-B
+# nav.travel_position_until_recive(-19762.0,19354.0)
+
+# Station 30-B
+# nav.travel_position_until_recive(-12834.0,18751.0)
