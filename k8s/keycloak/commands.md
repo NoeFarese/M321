@@ -4,7 +4,7 @@ kubectl apply -f keycloak.yml
 ``` 
 
 ```
- kubectl get pods -n theship-vendor
+kubectl get pods -n theship-vendor
 ```
 
 ```
